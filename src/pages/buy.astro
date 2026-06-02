@@ -1,0 +1,188 @@
+---
+// 购买指南页 —— 多平台购买入口卡片
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="购买渠道"
+  description="伴旅宝自加热控温杯官方购买渠道汇总——杯子+加热包补充装，淘宝、抖音、微信小店等多平台官方店铺，正品保障统一售后。"
+>
+  <div class="container-main section">
+    <h1 class="text-3xl sm:text-4xl font-bold text-center text-warm-900">
+      选择你习惯的平台下单
+    </h1>
+    <p class="mt-4 text-center text-warm-500 max-w-xl mx-auto">
+      所有平台均为官方直营店铺，正品保障，统一售后政策
+    </p>
+
+    <!-- 平台卡片列表 -->
+    <div class="mt-12 space-y-6 max-w-lg mx-auto">
+
+      <!-- 淘宝 -->
+      <div id="taobao" class="rounded-2xl border border-warm-200 p-6 hover:shadow-md transition-shadow bg-white">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl">🛒</span>
+            <div>
+              <h3 class="font-bold text-lg text-warm-900">淘宝 · 官方旗舰店</h3>
+              <p class="text-sm text-warm-500">最全商品详情 · 用户评价可参考</p>
+            </div>
+          </div>
+          <a href="#" target="_blank" rel="noopener" class="px-5 py-2 bg-brand-500 text-white text-sm font-medium rounded-full hover:bg-brand-600 transition-colors">去购买 →</a>
+        </div>
+      </div>
+
+      <!-- 京东 -->
+      <div id="jd" class="rounded-2xl border border-warm-200 p-6 hover:shadow-md transition-shadow bg-white">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl">🐶</span>
+            <div>
+              <h3 class="font-bold text-lg text-warm-900">京东 · 官方旗舰店</h3>
+              <p class="text-sm text-warm-500">物流快 · 正品保障</p>
+            </div>
+          </div>
+          <a href="#" target="_blank" rel="noopener" class="px-5 py-2 bg-brand-500 text-white text-sm font-medium rounded-full hover:bg-brand-600 transition-colors">去购买 →</a>
+        </div>
+      </div>
+
+      <!-- 抖音 -->
+      <div id="douyin" class="rounded-2xl border border-warm-200 p-6 hover:shadow-md transition-shadow bg-white">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl">🎵</span>
+            <div>
+              <h3 class="font-bold text-lg text-warm-900">抖音 · 官方小店</h3>
+              <p class="text-sm text-warm-500">短视频场景展示 · 直播间专属优惠</p>
+            </div>
+          </div>
+          <a href="#" target="_blank" rel="noopener" class="px-5 py-2 bg-brand-500 text-white text-sm font-medium rounded-full hover:bg-brand-600 transition-colors">去购买 →</a>
+        </div>
+      </div>
+
+      <!-- 微信小店 -->
+      <div id="wechat" class="rounded-2xl border border-warm-200 p-6 hover:shadow-md transition-shadow bg-white">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl">💬</span>
+            <div>
+              <h3 class="font-bold text-lg text-warm-900">微信小店</h3>
+              <p class="text-sm text-warm-500">微信内一键下单 · 无需跳转</p>
+            </div>
+          </div>
+          <a href="#" target="_blank" rel="noopener" class="px-5 py-2 bg-brand-500 text-white text-sm font-medium rounded-full hover:bg-brand-600 transition-colors">去购买 →</a>
+        </div>
+      </div>
+
+      <!-- 拼多多 -->
+      <div id="pdd" class="rounded-2xl border border-warm-200 p-6 hover:shadow-md transition-shadow bg-white">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl">🔻</span>
+            <div>
+              <h3 class="font-bold text-lg text-warm-900">拼多多 · 官方旗舰店</h3>
+              <p class="text-sm text-warm-500">高性价比 · 百亿补贴</p>
+            </div>
+          </div>
+          <a href="#" target="_blank" rel="noopener" class="px-5 py-2 bg-brand-500 text-white text-sm font-medium rounded-full hover:bg-brand-600 transition-colors">去购买 →</a>
+        </div>
+      </div>
+
+      <!-- 唯品会 -->
+      <div id="vipshop" class="rounded-2xl border border-warm-200 p-6 hover:shadow-md transition-shadow bg-white">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl">🛍️</span>
+            <div>
+              <h3 class="font-bold text-lg text-warm-900">唯品会</h3>
+              <p class="text-sm text-warm-500">品牌特卖 · 正品授权</p>
+            </div>
+          </div>
+          <a href="#" target="_blank" rel="noopener" class="px-5 py-2 bg-brand-500 text-white text-sm font-medium rounded-full hover:bg-brand-600 transition-colors">去购买 →</a>
+        </div>
+      </div>
+
+      <!-- 1688 -->
+      <div id="1688" class="rounded-2xl border border-warm-200 p-6 hover:shadow-md transition-shadow bg-white">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl">🏭</span>
+            <div>
+              <h3 class="font-bold text-lg text-warm-900">1688</h3>
+              <p class="text-sm text-warm-500">源头工厂 · 批量采购</p>
+            </div>
+          </div>
+          <a href="#" target="_blank" rel="noopener" class="px-5 py-2 bg-brand-500 text-white text-sm font-medium rounded-full hover:bg-brand-600 transition-colors">去购买 →</a>
+        </div>
+      </div>
+
+      <!-- 亚马逊 -->
+      <div id="amazon" class="rounded-2xl border border-warm-200 p-6 hover:shadow-md transition-shadow bg-white">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl">📦</span>
+            <div>
+              <h3 class="font-bold text-lg text-warm-900">亚马逊 · Amazon</h3>
+              <p class="text-sm text-warm-500">海外用户专属渠道</p>
+            </div>
+          </div>
+          <a href="#" target="_blank" rel="noopener" class="px-5 py-2 bg-brand-500 text-white text-sm font-medium rounded-full hover:bg-brand-600 transition-colors">去购买 →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== 加热包补充装单独购买 ===== -->
+    <div class="mt-12 max-w-lg mx-auto">
+      <div class="rounded-2xl bg-gradient-to-br from-brand-50 to-orange-50 border border-brand-200 p-6 text-center">
+        <span class="inline-block bg-brand-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-3">🔄 长期必备</span>
+        <h3 class="font-bold text-xl text-warm-900">加热包补充装</h3>
+        <p class="mt-2 text-sm text-warm-600">
+          每个加热包为一次性使用，建议常备补充装。<br />
+          食品级配方，与杯子配套使用，安全无忧。
+        </p>
+        <p class="mt-3 text-xs text-warm-600">
+          主要成分：铝粉、氧化钙、碳酸钠、碳酸氢钠、活性炭
+        </p>
+        <div class="mt-4 flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="#" target="_blank" rel="noopener" class="px-5 py-2 bg-brand-500 text-white text-sm font-medium rounded-full hover:bg-brand-600 transition-colors">
+            淘宝购买 →
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="px-5 py-2 border-2 border-brand-500 text-brand-600 text-sm font-medium rounded-full hover:bg-brand-50 transition-colors">
+            抖音购买 →
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="px-5 py-2 border-2 border-brand-500 text-brand-600 text-sm font-medium rounded-full hover:bg-brand-50 transition-colors">
+            微信小店 →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== 推荐：杯子+加热包套装 ===== -->
+    <div class="mt-6 max-w-lg mx-auto">
+      <div class="rounded-2xl bg-warm-800 text-white p-6 text-center">
+        <span class="inline-block bg-brand-500 text-xs font-bold px-3 py-1 rounded-full mb-3">💡 推荐</span>
+        <h3 class="font-bold text-xl">伴旅宝 入门套装</h3>
+        <p class="mt-2 text-sm text-warm-300">
+          杯子 ×1 + 加热包 ×10，一次备齐，省心省力。
+        </p>
+        <p class="mt-1 text-xs text-warm-400">
+          比单独购买更划算（具体优惠以各平台店铺为准）
+        </p>
+        <p class="mt-4 text-xs text-warm-400">
+          📌 各平台店铺搜索"伴旅宝"即可找到套装
+        </p>
+      </div>
+    </div>
+
+    <!-- 售后说明 -->
+    <div class="mt-16 max-w-lg mx-auto p-6 rounded-2xl bg-warm-100 border border-warm-200">
+      <h3 class="font-bold text-warm-900 mb-2">🛡️ 统一售后政策</h3>
+      <ul class="text-sm text-warm-600 space-y-1">
+        <li>· 所有平台购买的订单，均享受同等售后服务</li>
+        <li>· 30天无忧退换（不影响二次销售）</li>
+        <li>· 1年质保（非人为损坏免费换新）</li>
+        <li>· 售后联系：<a href="mailto:待填入@your-domain.com" class="text-brand-600 underline">待填入邮箱</a></li>
+      </ul>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,540 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; line-height: 1.8; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+  h1 { color: #f97316; border-bottom: 3px solid #f97316; padding-bottom: 8px; }
+  h2 { color: #c2410c; border-bottom: 1px solid #ddd; padding-bottom: 4px; margin-top: 28px; }
+  h3 { color: #444; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+  th, td { border: 1px solid #ccc; padding: 8px 10px; text-align: left; font-size: 14px; }
+  th { background: #f97316; color: white; }
+  tr:nth-child(even) { background: #f9f9f9; }
+  ul, ol { margin-left: 20px; }
+  li { margin: 4px 0; }
+  code { background: #f5f5f5; padding: 2px 6px; border-radius: 3px; }
+  blockquote { border-left: 4px solid #f97316; padding-left: 16px; color: #666; margin: 12px 0; }
+  strong { color: #ea580c; }
+</style>
+</head>
+<body>
+<h1>📋 伴旅宝中心站 · 资料准备清单</h1>
+<blockquote>
+<p>本清单与网站当前状态一一对应。每项标注了对应的<strong>页面</strong>和<strong>位置</strong>，方便你按图索骥。</p>
+</blockquote>
+<hr>
+<h2>一、🖼️ 图片素材（共 12 张）</h2>
+<h3>1.1 产品主图 🔴 最高优先</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>图片名称</th>
+<th>用途</th>
+<th>所在页面</th>
+<th>拍摄要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><strong>白底主图</strong></td>
+<td>产品详情页左侧主图</td>
+<td><code>product.astro</code> 第17行</td>
+<td>纯白背景，正侧面45°，分辨率≥1200px</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>白底正面</strong></td>
+<td>产品图集第一张</td>
+<td><code>product.astro</code> 图集区</td>
+<td>正面直拍，杯体完整</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>场景：通勤</strong></td>
+<td>产品图集</td>
+<td><code>product.astro</code> 图集区</td>
+<td>车内杯架/副驾，手持热饮</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>场景：户外</strong></td>
+<td>产品图集</td>
+<td><code>product.astro</code> 图集区</td>
+<td>露营/登山/公园场景</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>细节：加热仓</strong></td>
+<td>产品图集</td>
+<td><code>product.astro</code> 图集区</td>
+<td>底部加热仓打开状态</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>细节：杯盖密封</strong></td>
+<td>产品图集</td>
+<td><code>product.astro</code> 图集区</td>
+<td>杯盖+密封胶圈特写</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>包装展示</strong></td>
+<td>产品图集</td>
+<td><code>product.astro</code> 图集区</td>
+<td>外盒+内部结构分层展示</td>
+</tr>
+</tbody></table>
+<h3>1.2 场景图 🔴 最高优先</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>图片名称</th>
+<th>用途</th>
+<th>所在页面</th>
+<th>拍摄要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>8</td>
+<td><strong>场景：车内使用</strong></td>
+<td>首页场景卡片</td>
+<td><code>index.astro</code> 第102行</td>
+<td>横向构图，人在车内手持杯</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>场景：户外出行</strong></td>
+<td>首页场景卡片</td>
+<td><code>index.astro</code> 第111行</td>
+<td>横向构图，露营/登山场景</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>场景：办公桌前</strong></td>
+<td>首页场景卡片</td>
+<td><code>index.astro</code> 第120行</td>
+<td>横向构图，办公桌上杯子+电脑</td>
+</tr>
+</tbody></table>
+<h3>1.3 其他图片 🟡 高优先</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>图片名称</th>
+<th>用途</th>
+<th>所在页面</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>11</td>
+<td><strong>加热包产品图</strong></td>
+<td>首页复购区 + 购买页</td>
+<td><code>index.astro</code> 第200行</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>微信分享卡片图</strong></td>
+<td>链接分享到微信时显示的封面</td>
+<td>全局 <code>&lt;head&gt;</code> OG标签</td>
+</tr>
+</tbody></table>
+<h3>📸 拍摄建议</h3>
+<ul>
+<li>所有图片压缩到 <strong>≤ 500KB</strong>（我帮你把 WebP 压缩配置好）</li>
+<li>场景图建议<strong>横构图 16:9</strong>，便于网站各位置复用</li>
+<li>产品图建议<strong>方构图 1:1</strong>，适配电商平台通用格式</li>
+<li>细节图尽量用自然光或柔光灯箱，避免反光</li>
+</ul>
+<hr>
+<h2>二、🎬 视频素材（共 2 个）</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>视频</th>
+<th>用途</th>
+<th>时长</th>
+<th>所在页面</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><strong>产品演示视频</strong></td>
+<td>产品详情页</td>
+<td>30-60秒</td>
+<td><code>product.astro</code> 视频区</td>
+<td>展示加热包使用全过程：撕包装→放加热仓→加水→等待→温度变化→饮用</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>场景混剪（可选）</strong></td>
+<td>首页Hero背景</td>
+<td>15-30秒</td>
+<td>可替换Hero区静态背景</td>
+<td>通勤/户外/办公三场景快速切换，配乐无旁白</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>三、🔗 链接清单（共 15 个）</h2>
+<h3>3.1 电商平台店铺链接 🔴 最高优先</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>平台</th>
+<th>页面位置</th>
+<th>链接格式要求</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>淘宝官方旗舰店</td>
+<td><code>buy.astro</code> 第31行 + <code>index.astro</code></td>
+<td>店铺首页或商品链接</td>
+</tr>
+<tr>
+<td>2</td>
+<td>京东官方旗舰店</td>
+<td><code>buy.astro</code> 第45行 + <code>index.astro</code></td>
+<td>店铺首页或商品链接</td>
+</tr>
+<tr>
+<td>3</td>
+<td>抖音官方小店</td>
+<td><code>buy.astro</code> 第59行 + <code>index.astro</code></td>
+<td>店铺首页或商品链接</td>
+</tr>
+<tr>
+<td>4</td>
+<td>微信小店</td>
+<td><code>buy.astro</code> 第73行 + <code>index.astro</code></td>
+<td>店铺首页或商品链接</td>
+</tr>
+<tr>
+<td>5</td>
+<td>拼多多官方旗舰店</td>
+<td><code>buy.astro</code> 第87行 + <code>index.astro</code></td>
+<td>店铺首页或商品链接</td>
+</tr>
+<tr>
+<td>6</td>
+<td>唯品会</td>
+<td><code>buy.astro</code> 第101行 + <code>index.astro</code></td>
+<td>店铺首页或商品链接</td>
+</tr>
+<tr>
+<td>7</td>
+<td>1688</td>
+<td><code>buy.astro</code> 第115行 + <code>index.astro</code></td>
+<td>店铺首页或商品链接</td>
+</tr>
+<tr>
+<td>8</td>
+<td>亚马逊</td>
+<td><code>buy.astro</code> 第129行 + <code>index.astro</code></td>
+<td>店铺首页或商品链接</td>
+</tr>
+</tbody></table>
+<h3>3.2 加热包购买链接 🟡 高优先</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>平台</th>
+<th>页面位置</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>9</td>
+<td>淘宝加热包补充装</td>
+<td><code>buy.astro</code> 第147行</td>
+<td>单独链接到加热包商品</td>
+</tr>
+<tr>
+<td>10</td>
+<td>抖音加热包补充装</td>
+<td><code>buy.astro</code> 第150行</td>
+<td>单独链接到加热包商品</td>
+</tr>
+<tr>
+<td>11</td>
+<td>微信小店加热包</td>
+<td><code>buy.astro</code> 第153行</td>
+<td>单独链接到加热包商品</td>
+</tr>
+</tbody></table>
+<h3>3.3 社交媒体链接 🟡 高优先</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>平台</th>
+<th>页面位置</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>12</td>
+<td>微信公众号</td>
+<td><code>BaseLayout.astro</code> 第136行</td>
+<td>公众号名称或二维码</td>
+</tr>
+<tr>
+<td>13</td>
+<td>视频号</td>
+<td><code>BaseLayout.astro</code> 第137行</td>
+<td>视频号名称或链接</td>
+</tr>
+<tr>
+<td>14</td>
+<td>小红书</td>
+<td><code>BaseLayout.astro</code> 第138行</td>
+<td>小红书号或主页链接</td>
+</tr>
+<tr>
+<td>15</td>
+<td>抖音</td>
+<td><code>BaseLayout.astro</code> 第139行</td>
+<td>抖音号或主页链接</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>四、✍️ 文案清单（共 6 篇）</h2>
+<h3>4.1 品牌文案 🔴 最高优先</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>内容</th>
+<th>用途</th>
+<th>所在页面</th>
+<th>建议篇幅</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><strong>品牌故事</strong></td>
+<td>品牌故事页完整内容</td>
+<td><code>story.astro</code></td>
+<td>500-800字</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>品牌口号</strong></td>
+<td>全站SEO标题/副标题</td>
+<td>全局</td>
+<td>≤15字</td>
+</tr>
+</tbody></table>
+<h3>4.2 产品文案 🟡 高优先</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>内容</th>
+<th>用途</th>
+<th>所在页面</th>
+<th>建议内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>3</td>
+<td><strong>产品卖点精炼版</strong></td>
+<td>产品页核心参数区微调</td>
+<td><code>product.astro</code></td>
+<td>如需调整现有卖点文字</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>竞品对比表·耗材成本</strong></td>
+<td>产品页对比表最后一栏</td>
+<td><code>product.astro</code> 对比表</td>
+<td>加热包单价（如&quot;约X元/次&quot;）</td>
+</tr>
+</tbody></table>
+<h3>4.3 用户评价 🟡 高优先（收集到后替换模拟文案）</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>内容</th>
+<th>用途</th>
+<th>所在页面</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>5</td>
+<td><strong>用户评价 × 3条</strong></td>
+<td>首页评价区</td>
+<td><code>index.astro</code> 第213-225行</td>
+<td>淘宝/抖音/微信小店真实好评截图，附用户昵称（脱敏）</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>用户场景照片</strong></td>
+<td>首页评价区增强</td>
+<td><code>index.astro</code></td>
+<td>用户主动分享的使用照片（获授权后使用）</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>五、📐 产品参数确认（待你最终核对）</h2>
+<p>以下参数已在网站上，请逐项确认无误：</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>参数</th>
+<th>当前网站值</th>
+<th>是否正确？</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>产品型号</td>
+<td>BXB-400</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>容量</td>
+<td>300ml</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>尺寸</td>
+<td>高180mm × 直径75mm</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>净重</td>
+<td>280g（不含加热包）</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>控温区间</td>
+<td>45~55°C</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>杯身材质</td>
+<td>PP丙烯与乙烯聚合物</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>密封胶圈</td>
+<td>食品级硅橡胶</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>杯套</td>
+<td>硅胶</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>加热包成分</td>
+<td>铝粉/氧化钙/碳酸钠/碳酸氢钠/活性炭</td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>加热包是否食品级</td>
+<td>是</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>六、⚙️ 技术与合规清单</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>当前状态</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><strong>域名</strong></td>
+<td>待注册</td>
+<td>注册后更新 <code>astro.config.mjs</code> 中的 <code>site</code> 字段</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>ICP 备案号</strong></td>
+<td>待填入</td>
+<td>页脚 <code>BaseLayout.astro</code> 第147行</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>百度统计代码</strong></td>
+<td>已预留位置</td>
+<td><code>BaseLayout.astro</code> 第43行</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>客服邮箱</strong></td>
+<td>待填入</td>
+<td>购买页 + 使用指南页共2处</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>售后地址/电话</strong></td>
+<td>可选</td>
+<td>售后政策区可补充</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>产品执行标准</strong></td>
+<td>待确认</td>
+<td>说明书上的 GB 4706 系列是否适用？</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>隐私政策页</strong></td>
+<td>可选</td>
+<td>如收集用户邮箱/手机号，需添加</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>网站图标优化</strong></td>
+<td>已用临时logo</td>
+<td>品牌VI确定后替换 <code>public/favicon.svg</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>七、上线前自检清单</h2>
+<pre><code>□  所有 12 张图片已拍摄并放入 public/images/
+□  所有 15 个链接已替换为真实链接
+□  页脚 ICP 备案号已填写
+□  品牌故事页文案已写入
+□  品牌口号已最终确认
+□  产品参数表已逐项核实
+□  各平台店铺都已在对应平台注册并上架
+□  百度搜索&quot;伴旅宝&quot;能找到官网（需等收录）
+□  微信分享链接时卡片显示正常
+□  手机浏览器访问排版正常
+□  所有外部链接可正常点开
+□  联系邮箱可用
+</code></pre>
+<hr>
+<blockquote>
+<p>📌 <strong>使用说明</strong>：完成一项勾一项。图素材和链接是最高优先级——这两个补齐后，网站就从&quot;架子&quot;变成&quot;真正的官网&quot;了。</p>
+</blockquote>
+
+</body>
+</html>

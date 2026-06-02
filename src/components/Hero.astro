@@ -1,0 +1,65 @@
+---
+// 首页 Hero 区组件
+// 核心任务：3秒内告诉用户"这是什么 + 为什么值得看下去"
+
+interface Props {
+  headline?: string;
+  subheadline?: string;
+  ctaText?: string;
+  ctaLink?: string;
+  bgImage?: string;
+}
+
+const {
+  headline = "让每一口，都恰到好处",
+  subheadline = "伴旅宝自加热控温杯 · 食品级加热包安全速热，无需插电，暖胃温度45~55°C",
+  ctaText = "了解产品",
+  ctaLink = "/product",
+} = Astro.props;
+---
+
+<section class="relative overflow-hidden bg-gradient-to-br from-brand-50 via-warm-50 to-brand-100">
+  <div class="container-main section">
+    <div class="max-w-2xl mx-auto text-center">
+      <!-- 主标题 -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-warm-900 leading-tight tracking-tight">
+        {headline}
+      </h1>
+
+      <!-- 副标题 -->
+      <p class="mt-6 text-lg sm:text-xl text-warm-600 leading-relaxed">
+        {subheadline}
+      </p>
+
+      <!-- CTA 按钮组 -->
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href={ctaLink}
+          class="inline-block px-8 py-3.5 bg-brand-500 text-white font-medium text-lg rounded-full hover:bg-brand-600 transition-all shadow-lg shadow-brand-200 hover:shadow-xl hover:shadow-brand-300 active:scale-95"
+        >
+          {ctaText}
+        </a>
+        <a
+          href="/buy"
+          class="inline-block px-8 py-3.5 border-2 border-brand-500 text-brand-600 font-medium text-lg rounded-full hover:bg-brand-50 transition-all active:scale-95"
+        >
+          立即购买
+        </a>
+      </div>
+
+      <!-- 信任信号：小而轻的背书 -->
+      <div class="mt-12 flex flex-wrap items-center justify-center gap-6 text-sm text-warm-500">
+        <span class="flex items-center gap-1">✅ 食品级安全材质</span>
+        <span class="flex items-center gap-1">✅ 加热包速热 · 无需插电</span>
+        <span class="flex items-center gap-1">✅ 45~55°C 暖胃控温</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 装饰性底部曲线 -->
+  <div class="absolute bottom-0 left-0 right-0">
+    <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="w-full h-auto">
+      <path d="M0 100C240 0 480 0 720 50C960 100 1200 100 1440 50V100H0Z" class="fill-warm-50" />
+    </svg>
+  </div>
+</section>

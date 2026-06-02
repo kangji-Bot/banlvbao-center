@@ -1,0 +1,49 @@
+---
+// 购买按钮组件 —— 可在任意页面嵌入
+// 跳转到多平台购买指南页，而非直接链接到某个平台
+
+interface Props {
+  /** 按钮文字，默认"立即购买" */
+  text?: string;
+  /** 按钮样式变体：primary（实心橙）| outline（橙边框）| white（白色） */
+  variant?: "primary" | "outline" | "white";
+  /** 是否为大号按钮 */
+  size?: "sm" | "md" | "lg";
+  /** 自定义链接，默认跳转 /buy 购买指南页 */
+  href?: string;
+  /** 额外的CSS类名 */
+  class?: string;
+}
+
+const {
+  text = "立即购买",
+  variant = "primary",
+  size = "md",
+  href = "/buy",
+  class: extraClass = "",
+} = Astro.props;
+
+// 变体样式映射
+const variantClasses = {
+  primary:
+    "bg-brand-500 text-white hover:bg-brand-600 shadow-lg shadow-brand-200 hover:shadow-xl hover:shadow-brand-300",
+  outline:
+    "border-2 border-brand-500 text-brand-600 hover:bg-brand-50",
+  white:
+    "bg-white text-brand-600 hover:bg-brand-50 shadow-md",
+};
+
+// 尺寸映射
+const sizeClasses = {
+  sm: "px-4 py-2 text-sm",
+  md: "px-6 py-3 text-base",
+  lg: "px-8 py-4 text-lg",
+};
+---
+
+<a
+  href={href}
+  class={`inline-block rounded-full font-medium transition-all active:scale-95 ${variantClasses[variant]} ${sizeClasses[size]} ${extraClass}`}
+>
+  {text}
+</a>
